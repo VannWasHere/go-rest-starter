@@ -1,8 +1,10 @@
 package main
 
-type users struct {
-	ID       string `json:"id"`
-	Name     string `json:"name"`
-	Email    string `json:"email"`
-	Password string `json:"password"`
+import "learn-go/internal/db"
+
+func main() {
+	db.InitDB()
+
+	defer db.DB.Close()
+
 }
