@@ -1,11 +1,13 @@
 package api
 
-import "github.com/gorilla/mux"
+import (
+	"github.com/gin-gonic/gin"
+)
 
-func NewRouter() *mux.Router {
-	router := mux.NewRouter()
+func NewRouter() *gin.Engine {
+	router := gin.Default()
 
-	// User Router
+	// This is router site
 
 	return router
 }
